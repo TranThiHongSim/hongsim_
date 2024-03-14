@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Liên hệ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .lh{
+            font-size: 25px;
+            font-weight: bold;
+            color: blue;
+        }
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            color: gray;
+        }
+        .contact-info {
+            width: 50%;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .contact-form {
+            width: 50%;
+            padding: 20px;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="lh">Liên hệ</div>   
+    <hr color="red" />
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Thông tin</h3>
+            <p> <i class="fa-solid fa-location-dot" style="color: gray; margin-left: 5px;"></i>  Kp. 6, P. Linh Trung, Tp. Thủ Đức, TP. HCM</p>
+            <p> <i class="fa-regular fa-envelope" style="color: gray; margin-left: 5px;"></i>  Email: info@uit.edu.vn</p>
+            <p> <i class="fa-solid fa-phone" style="color: gray; margin-left: 5px;"></i> Điện thoại: +84 28 3725 2002</p>
+        </div>
+    <div class="contact-form">
+        <h3><font color="purple">Hãy liên lạc với chúng tôi bất cứ khi nào!!!</font></h3>
+        <form action="#" method="post">
+            <input type="text" id="name" placeholder="Họ và tên" required>
+            <input type="email" id="email" placeholder="Địa chỉ email" required>
+            <input type="text" id="subject" placeholder="Tiêu đề của bài viết" required>
+            <textarea id="message" rows="4" placeholder="Nội dung cần gửi" required></textarea>
+            <button type="submit" onclick="displayConfirmation()">GỬI TIN NHẮN <i class="fa-regular fa-circle-check"></i></button>
+        </form>
+    </div>
+</div>
+    <script>
+        function displayConfirmation() 
+       {   const name = document.getElementById("name").value;
+           const email = document.getElementById("email").value;
+           const title = document.getElementById("subject").value;
+           const mess= document.getElementById("message").value;
+           window.confirm("Họ và tên: " + name + "\nE-mail: " + email + "\nTiêu đề: " + title + "\nTin nhắn: " + mess)
+           alert(confirmation);
+       } 
+   </script>
+    </body>
+</html>

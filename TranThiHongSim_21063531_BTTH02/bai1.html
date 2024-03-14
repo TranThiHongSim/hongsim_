@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .container{
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        button{
+            border-radius: 0.5cqmin;
+            padding: 0,5cm 3% 0,5% 3%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div>GIẢI PHƯƠNG TRÌNH BẬC 1</div>
+    <form id="giaipt">
+        <input type="number" id="he-so-a" name="a" placeholder="Hệ số a"/></br>
+        <br>
+        <input type="number" id="he-so-b" name="b" placeholder="Hệ số b"/>
+        <br>
+        <br>
+        <button type="submit">Giải Phương Trình</button>
+    </form>
+    <br>
+    <div id="ket-qua"></div>
+    <script>
+        $(document).ready(function() {
+            $("#giaipt").submit(function(e) {
+                e.preventDefault()
+                var a = $("#he-so-a").val()
+                var b = $("#he-so-b").val()
+                if (a == 0) {
+                    if (b == 0) {
+                        $("#ket-qua").html("Phương trình vô số nghiệm")
+                    } else {
+                        $("#ket-qua").html("Phương trình vô nghiệm")
+                    }
+                } else {
+                    var x = -b / a;
+                    $("#ket-qua").html("Phương trình có nghiệm x = " + x)
+                }
+            })
+        })
+    </script>
+    </div>
+</body>
+</html>
