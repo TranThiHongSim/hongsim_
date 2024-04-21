@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    }
+    .nav-link{
+        color: white;
+    }
+    .content{
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 1cqmin;
+        padding: 20px 20px 20px 20px;
+        border-top: 1px solid gray;
+    }
+
+    .site-footer {
+        background-color: rgb(14, 32, 85);
+        padding: 45px 0 20px;
+        line-height: 24px;
+        color: aliceblue;
+        text-align: center;
+      }
+/*       
+      .site-footer hr {
+        border-top-color: #ffffff;
+        opacity: 0.5
+      } */
+      
+      .site-footer hr.small {
+        margin: 20px 0
+      }
+      
+      .site-footer h3 {
+        text-transform: uppercase;
+        margin-top: 5px;
+        letter-spacing: 2px
+      }
+      
+      .site-footer a {
+        color: #737373;
+      }
+      
+      .site-footer a:hover {
+        color: rgb(234, 255, 0);
+        text-decoration: none;
+      }
+      
+      .footer-links {
+        padding-left: 0;
+        list-style: none;
+        /* text-align: center; */
+      }
+      
+      .footer-links li {
+        display: block
+      }
+      
+      /* .footer-links a {
+        color: #737373
+      } */
+      
+      /* .footer-links a:active,
+      .footer-links a:focus,
+      .footer-links a:hover {
+        background-color: aliceblue;
+        /* color: #1e0707 !important; */
+       */
+      
+      .site-footer .social-icons a {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #ffffff
+      }
+      
+      .copyright-text {
+        margin: 0;
+        text-align: center
+      }
+      
+      @media (max-width:991px) {
+        .site-footer [class^=col-] {
+          margin-bottom: 30px
+        }
+      }
+      
+      @media (max-width:767px) {
+        .site-footer {
+          padding-bottom: 0
+        }
+      
+        .site-footer .copyright-text,
+        .site-footer .social-icons {
+          text-align: center
+        }
+      }
+      
+      .social-icons {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+      }
+      
+      .social-icons:hover {
+        background-color: rgb(236, 68, 74);
+      }
+      
+      .social-icons li {
+        display: inline-block;
+      }
+      
+      .social-icons li.title {
+        margin-right: 15px;
+        text-transform: uppercase;
+        color: #96a2b2;
+        font-weight: 700;
+      }
+      .bg-text {
+        position: absolute;
+        top: 30px;
+        text-align: center;
+        margin-top: 30px;
+        color: white;
+      }
+      
+/* 
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      } */
+      
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+      .show {display:block;}
